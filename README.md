@@ -7,11 +7,6 @@ Para instalar os *assets*, você pode clonar o repositório dentro da sua pasta 
 git clone https://github.com/pedroroccon/hive-assets
 ```
 
-Após este procedimento, você **deve renomear a pasta hive-assets para hi**, utilizando o comando:
-```
-mv hive-assets hi
-```
-
 Não se esqueça de **remover a pasta .git** do pacote.
 ```
 rm -R hi/.git
