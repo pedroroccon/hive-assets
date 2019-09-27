@@ -122,24 +122,23 @@
 			text-decoration: none;
 		}
 	}
+	.form-control {
+		margin: 7px 0 12px 75px;
+		border: none;
+		background-color: #ddd;
+		width: 64%;
+		
+		&:hover, &:active, &:focus {
+			outline: 0;
+			background-color: #fff;
+			box-shadow: none;
+		}
+	}
 	.hello-nav-list {
 
 		padding: 0;
 		margin: 0;
 		list-style: none;
-
-		.form-control {
-			margin: 7px 0 12px 75px;
-			border: none;
-			background-color: #ddd;
-			width: 64%;
-
-			&:hover, &:active, &:focus {
-				outline: 0;
-				background-color: #fff;
-				box-shadow: none;
-			}
-		}
 
 		a {
 			display: block;
