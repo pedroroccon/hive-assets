@@ -127,8 +127,9 @@
 		border: none;
 		background-color: #ddd;
 		width: 64%;
+		@include transition(background .2s ease-in-out);
 		
-		&:hover, &:active, &:focus {
+		&:active, &:focus {
 			outline: 0;
 			background-color: #fff;
 			box-shadow: none;
@@ -147,7 +148,7 @@
 			margin-left: 46px;
 			font: 700 .85em 'Quicksand', sans-serif;
 			text-transform: lowercase;
-			@include transition(color .2s ease-in-out);
+			@include transition(color .2s ease-in-out, border .2s ease-in-out);
 
 			@media only screen and (min-width : 992px) {
 				margin-left: 36px;
