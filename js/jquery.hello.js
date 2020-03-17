@@ -34,7 +34,16 @@ $(function()
 	});
 
 	$('.form-pagination-page').change(function() {
-		$(this).parents('form').submit();
+		var url = $(this).data('url');
+		var page = $(this).val();
+
+		if ( url.substring(url.length - 1) == '?') {
+			url = url.substring(0, url.length - 1) + '?page=' + page;
+		} else {
+			url = url + '&page=' + page;
+		}
+		
+		window.location.href = url;
 	});
 
 	/**
